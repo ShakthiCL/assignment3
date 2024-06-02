@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* Flex-direction */
+        .flex-container1{
+            border: 2px solid red;
+            display: flex;
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+            /* flex-direction: column; */
+            flex-direction: row;
+            
+           
+        }
+        .flex-item{
+            border: 1px solid black;
+            background-color: aquamarine;
+            margin: 12px;
+            padding: 12px;
+            width: 50px;
+            height: 50px;
+        }
+
+        /* <!-- Flex-Justifycontent --> */
+        .flex-container2{
+            border: 2px solid black;
+            margin: 2em 0;
+            padding: 5em;
+            display: flex;
+            /* justify-content: baseline; */
+            /* justify-content: center; */
+            /* justify-content: end; */
+            /* justify-content: flex-start; */
+            /* justify-content: flex-end; */
+            /* justify-content:space-around; */
+            /* justify-content: space-between; */
+            justify-content: space-evenly;
+
+        }
+        
+        /* align-item */
+        .flex-container3{
+            border: 2px solid black;
+            width: 100%;
+            height: 200px;
+            display: flex;
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+            /* align-items: first baseline; */
+            align-items: center;
+
+        }
+
+        /* Flex-wrap */
+        .flex-container4{
+            border: 2px solid black;
+            margin: 2em 0;
+            padding: 5em;
+            display: flex;
+            /* flex-wrap: wrap; */
+            /* flex-wrap: nowrap; */
+            flex-wrap: wrap-reverse;
+        }
+        
+        /* order */
+        .flex-container5{
+            border: 2px solid black;
+            margin: 2em 0;
+            padding: 5em;
+            height: 300px;
+            display: flex;
+            
+        }
+        
+        .item2{
+            /* order: 3; */
+            /* flex-grow: 3; */
+            /* flex-shrink: 2; */
+            align-self:flex-end;
+            
+        }
+        .item3{
+            /* order: 3;
+            flex-grow: 2; */
+            align-self: center;
+        }
+        
+        
+        
+
+    </style>
+</head>
+<body>
+    <!-- flex-direction -->
+    <h3>Flex-direction</h3>
+    <div class="flex-container1">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+    </div>
+
+    <!-- Justifycontent -->
+    <h3>Justifycontent</h3>
+    <div class="flex-container2">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+    </div>
+    
+
+    <!-- alignitem -->
+    <h3>Align-item</h3>
+    <div class="flex-container3">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+    </div>
+
+    <h3>Flex-wrap</h3>
+    <div class="flex-container4">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+    </div>
+
+
+   <h3>Order,Flex-grow & shrink</h3>
+    <div class="flex-container5">
+        <div class="flex-item item1">1</div>
+        <div class="flex-item item2">2</div>
+        <div class="flex-item item3">3</div>
+    </div> 
+
+</body>
+</html>

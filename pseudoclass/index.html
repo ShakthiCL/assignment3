@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            padding: 24px;
+            font-size: 2em;
+        }
+       button:hover{
+        color: white;
+        background-color: blue;
+        cursor: pointer;
+
+       }
+       .active a{
+        font-size: 1.5em;
+        margin: 12% ;
+       }
+       a:active{
+        color: red;
+        
+       }
+       input:focus{
+        color: red;
+        background-color: rgba(0, 0, 255, 0.534);
+       }
+       li:nth-child(odd){
+        color: red;
+        background-color: darkblue;
+       }
+      li a:visited{
+        color: hotpink;
+        background-color: red;
+       }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <input type="text" placeholder="Click to focus"><br><br>
+        <button type="button">Hover</button>
+    </form>
+
+    <div class="active">
+        <a href="https://web.whatsapp.com/">whatsapp</a>
+    </div>
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+
+    <li><a href="https://www.instagram.com/">instagram</a></li>
+</body>
+</html>
